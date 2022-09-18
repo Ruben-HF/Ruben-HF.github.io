@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 header{
@@ -49,12 +49,12 @@ nav ul a{
     justify-content: space-between;
     display:inline-block;
     padding: 0.5rem 1rem;
-    transition: all 0.4s linear;
+    transition: all 0.2s linear;
     border-radius: 16px;
 }
 
 nav ul a:hover{
-    font-weight: 600;   
+       
     background-color: rgba(70, 81, 99, 0.884);
     border-radius: 16px;
 }
@@ -63,6 +63,11 @@ nav ul a:hover{
     color: black;
     padding: 3px;
     text-decoration: none;
+}
+
+.OP{
+    padding: 3px 21px;
+    text-align: justify;
 }
 
 
@@ -106,7 +111,7 @@ nav ul a:hover{
     width: auto;
 }
 
-h2{
+.heads{
     text-align: center;
     align-content: center;
 }
@@ -190,7 +195,23 @@ h2{
 .flexbox-item-10{
     flex-grow: 1;
     text-align: justify;
-    max-width: 50%;
+    max-width: 47%;
+}
+
+.flexbox-container3{
+    padding: 15px;
+    background-color: grey;
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: center;
+}
+
+.flexbox-container4{
+    padding: 15px;
+    background-color: blue;
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: center;
 }
 
 footer{
