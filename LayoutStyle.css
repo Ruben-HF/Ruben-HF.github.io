@@ -158,8 +158,9 @@ nav ul a:hover{
     padding: 15px;
     background-color:white;
     display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
+    flex-wrap: nowrap; 
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
 .flexbox-item-5{
@@ -177,25 +178,21 @@ nav ul a:hover{
 .flexbox-item-7{
     flex-grow: 1;
     text-align: justify;
-    max-width: 50%;
 }
 
 .flexbox-item-8{
     flex-grow: 1;
     text-align: justify;
-    max-width: 50%;
 }
 
 .flexbox-item-9{
     flex-grow: 1;
     text-align: justify;
-    max-width: 50%;
 }
 
 .flexbox-item-10{
     flex-grow: 1;
     text-align: justify;
-    max-width: 47%;
 }
 
 .flexbox-container3{
@@ -226,9 +223,7 @@ footer{
     color: rgb(68, 67, 67);
 }
 
-
-@media only screen and (max-width: 930px){ 
-
+@media only screen and (max-width: 906px){ 
     header{
         flex-direction: column;
     }
@@ -258,8 +253,12 @@ footer{
     nav ul.show{
         display: block;
     }
+}
 
 
+@media only screen and (max-width: 1000px){ 
+
+   
     .flexbox-container1{
         flex-wrap: wrap; 
         flex-direction: column;
@@ -267,14 +266,14 @@ footer{
 
     .flexbox-container{
         flex-direction: column;
-        width: 90%;
+        width: 95%;
         flex-wrap: wrap;
         flex-flow: column;
         
     }
     
     .aside{
-        min-width: fit-content;
+        min-width: 50%;
         height: 100%;
         
     }
@@ -300,4 +299,15 @@ footer{
         width: auto;
         flex-grow: 0;
     }
+
+    .flexbox-container2{
+        padding: 30px;
+        background-color:white;
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+
 }
